@@ -3,10 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100vh;
   background: linear-gradient(45deg, #4756c6, #ae76f1, #e9b6ed);
 }
+
 .container {
   font-size: 14px;
   width: 35em;
@@ -14,6 +16,7 @@ body {
   position: relative;
   margin: auto;
 }
+
 .word {
   font-family: "Poppins", sans-serif;
   color: #301167;
@@ -22,17 +25,21 @@ body {
   letter-spacing: 0.3em;
   position: absolute;
 }
+
 .word-1 {
   left: 0.52em;
   top: 1em;
 }
+
 .word-2 {
   top: 3.12em;
   right: 0;
 }
+
 .word-2 span:last-child {
   margin-left: 0.3em;
 }
+
 .pendulum {
   background-color: #f5de59;
   height: 25em;
@@ -45,11 +52,13 @@ body {
   transform-origin: top;
   animation: swing 2.5s infinite ease-in-out;
 }
+
 @keyframes swing {
   50% {
     transform: rotate(-15deg);
   }
 }
+
 .pendulum:after {
   position: absolute;
   content: "";
@@ -60,8 +69,21 @@ body {
   bottom: -4.37em;
   left: -2.1em;
 }
+
 @media screen and (min-width: 700px) {
   .container {
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 250px) {
+  .container {
+    font-size: 10px;
   }
 }
